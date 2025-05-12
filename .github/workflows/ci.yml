@@ -1,0 +1,11 @@
+name: Hello CI/CD
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Ejecutar Hello World
+        run: node hello.js
